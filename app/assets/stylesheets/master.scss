@@ -55,3 +55,13 @@ h1, a, a:hover, a:visited {
   border-radius: 3px; 
   padding: 2px 8px 2px 8px;
 }
+
+#map {
+  height: 300px;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
