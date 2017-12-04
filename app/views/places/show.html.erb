@@ -45,6 +45,7 @@
         </div>
         <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
           <div class="modal-body">
+            <%= f.input :picture %>
             <%= f.input :caption %>
           </div>
         <div class="modal-footer">
@@ -70,6 +71,7 @@
   <div class="row">
     <% @place.photos.each do |photo| %>
       <div class="col-12 col-sm-6">
+        <%= image_tag photo.picture %>
         <blockquote>
           <%= photo.caption %>
         </blockquote>
