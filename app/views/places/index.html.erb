@@ -10,7 +10,7 @@
 
     <% if place.photos.present? %>
       <br /><br />
-      <div class="col-12">
+      <div class="col-12 col-sm-6 image-container">
         <%= image_tag place.photos.last.picture %>
       </div>
     <% end %>
